@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 480px;
+}
+
+.header-box {
+    background: #161b22;
+    border: 1px solid #30363d;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.header-box h1 {
+    color: #00ff88;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.header-box p {
+    font-size: 0.85rem;
+    color: #8b949e;
+    margin-top: 5px;
+}
+
+.credit-banner {
+    text-align: center;
+    background: rgba(0, 255, 136, 0.08);
+    border: 1px dashed #00ff88;
+    color: #00ff88;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    color: #8b949e;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #00ff88;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #00ff88;
+    color: #000000;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:disabled {
+    background: #30363d;
+    color: #8b949e;
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none;
+}
+
+.loader-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.spinner {
+    width: 28px;
+    height: 28px;
+    border: 3px solid #30363d;
+    border-top-color: #00ff88;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 10px;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+.output-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-left: 4px solid #00ff88;
+    border-radius: 6px;
+}
+
+.output-box p {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.output-box p strong {
+    color: #ffffff;
+}
+
+.redirect-btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: #238636;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
