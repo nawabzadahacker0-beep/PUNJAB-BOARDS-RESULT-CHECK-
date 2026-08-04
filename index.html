@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punjab Boards Result</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header-box">
+            <h1>PUNJAB BOARDS RESULT</h1>
+            <p>9th, 10th, 11th & 12th Class Online Result Check</p>
+        </header>
+
+        <div class="credit-banner">
+            Developer Nawab Zada Hacker ☠️🙌🦅
+        </div>
+
+        <div class="card">
+            <form id="searchForm">
+                <div class="field">
+                    <label for="board">Board</label>
+                    <select id="board" required>
+                        <option value="" disabled selected>Select Board</option>
+                        <option value="biselahore">BISE Lahore</option>
+                        <option value="biserwp">BISE Rawalpindi</option>
+                        <option value="bisemultan">BISE Multan</option>
+                        <option value="bisefsd">BISE Faisalabad</option>
+                        <option value="bisegrw">BISE Gujranwala</option>
+                        <option value="bisesgd">BISE Sargodha</option>
+                        <option value="bisebwp">BISE Bahawalpur</option>
+                        <option value="bisesal">BISE Sahiwal</option>
+                        <option value="bisedgk">BISE DG Khan</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="class">Class</label>
+                    <select id="class" required>
+                        <option value="10th">10th Class (Matric)</option>
+                        <option value="9th">9th Class</option>
+                        <option value="12th">12th Class (Inter Part-2)</option>
+                        <option value="11th">11th Class (Inter Part-1)</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="rollNo">Roll Number</label>
+                    <input type="number" id="rollNo" placeholder="Enter Roll No" required min="1">
+                </div>
+
+                <button type="submit" id="btn">Search Result</button>
+            </form>
+
+            <div id="loader" class="loader-box hidden">
+                <div class="spinner"></div>
+                <p>Connecting To Board Database...</p>
+            </div>
+
+            <div id="output" class="output-box hidden"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
